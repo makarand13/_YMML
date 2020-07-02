@@ -79,7 +79,9 @@
     <object class="WED_Select" id="2" parent_id="1">
       <children/>
       <hierarchy name="selection"/>
-      <selection/>
+      <selection>
+        <sel id="4025"/>
+      </selection>
     </object>
     <object class="WED_KeyObjects" id="3" parent_id="1">
       <children/>
@@ -179,6 +181,7 @@
     </object>
     <object class="WED_Airport" id="617" parent_id="4">
       <children>
+        <child id="4025"/>
         <child id="1746"/>
         <child id="1737"/>
         <child id="1476"/>
@@ -5279,6 +5282,14 @@
         <marking value="Taxiway Edge Lights (Blue)"/>
       </markings>
     </object>
+    <object class="WED_AirportChain" id="4025" parent_id="617">
+      <children>
+        <child id="4026"/>
+        <child id="4027"/>
+      </children>
+      <hierarchy name="Runway_Hold.lin" locked="0" hidden="0"/>
+      <airport_chain closed="0"/>
+    </object>
     <object class="WED_SimpleBezierBoundaryNode" id="2574" parent_id="2573">
       <children/>
       <hierarchy name="Node 1" locked="0" hidden="0"/>
@@ -6349,6 +6360,14 @@
       <children/>
       <hierarchy name="Node 2" locked="0" hidden="0"/>
       <point latitude="-37.684916319" longitude="144.843254437" split="0" ctrl_latitude_lo="0.0" ctrl_longitude_lo="0.0" ctrl_latitude_hi="0.0" ctrl_longitude_hi="0.0"/>
+    </object>
+    <object class="WED_AirportNode" id="4026" parent_id="4025">
+      <children/>
+      <hierarchy name="Node 1" locked="0" hidden="0"/>
+      <point latitude="-37.661682908" longitude="144.822147430" split="0" ctrl_latitude_lo="0.0" ctrl_longitude_lo="0.0" ctrl_latitude_hi="0.0" ctrl_longitude_hi="0.0"/>
+      <markings>
+        <marking value="Runway Hold"/>
+      </markings>
     </object>
     <object class="WED_AirportNode" id="2059" parent_id="1844">
       <children/>
@@ -13514,6 +13533,14 @@
       <hierarchy name="Node 5" locked="0" hidden="0"/>
       <point latitude="-37.663689212" longitude="144.827036055" split="1" ctrl_latitude_lo="-0.000120179" ctrl_longitude_lo="0.000087789" ctrl_latitude_hi="0.000178810" ctrl_longitude_hi="-0.000125096"/>
     </object>
+    <object class="WED_AirportNode" id="4027" parent_id="4025">
+      <children/>
+      <hierarchy name="Node 2" locked="0" hidden="0"/>
+      <point latitude="-37.661703915" longitude="144.822518727" split="0" ctrl_latitude_lo="0.0" ctrl_longitude_lo="0.0" ctrl_latitude_hi="0.0" ctrl_longitude_hi="0.0"/>
+      <markings>
+        <marking value="Runway Hold"/>
+      </markings>
+    </object>
   </objects>
   <prefs>
     <pref name="PropertyPane0/Closed">
@@ -13521,22 +13548,21 @@
       <item value="1476"/>
       <item value="1508"/>
       <item value="1737"/>
-      <item value="1746"/>
       <item value="3230"/>
     </pref>
     <pref name="doc/export_target" value="5"/>
     <pref name="doc/xml_compatibility" value="107"/>
-    <pref name="map/east" value="144.831735"/>
+    <pref name="map/east" value="144.822604"/>
     <pref name="map/navaid_map_vis" value="0"/>
-    <pref name="map/north" value="-37.661675"/>
+    <pref name="map/north" value="-37.661397"/>
     <pref name="map/obj_density" value="5"/>
     <pref name="map/pavement_alpha" value="4"/>
     <pref name="map/preview_vis" value="1"/>
     <pref name="map/real_lines_vis" value="1"/>
     <pref name="map/slippy_vis" value="0"/>
-    <pref name="map/south" value="-37.667183"/>
+    <pref name="map/south" value="-37.661912"/>
     <pref name="map/vertices_vis" value="1"/>
-    <pref name="map/west" value="144.823401"/>
+    <pref name="map/west" value="144.821826"/>
     <pref name="map/world_map_vis" value="1"/>
     <pref name="map_Airport Beacon_Kind" value="69"/>
     <pref name="map_Boundary_.Markings" value=""/>
@@ -13558,7 +13584,7 @@
     <pref name="map_Hole_Markings" value=""/>
     <pref name="map_Light Fixture_Approach Angle" value="3.000000"/>
     <pref name="map_Light Fixture_Fixture Type" value="36"/>
-    <pref name="map_Lines_Resource" value="MisterX_Library/Ground_Textures/Damage/Tar_Line.lin"/>
+    <pref name="map_Lines_Resource" value="MisterX_Library/Airport/Taxilines/Runway_Hold.lin"/>
     <pref name="map_Objects_Object" value="lib/Flyby_Planes/Airliners/A380_Qantas.obj"/>
     <pref name="map_Objects_Show with" value="751"/>
     <pref name="map_Polygons_Heading" value="353.000000"/>
@@ -13590,9 +13616,9 @@
     <pref name="map_Taxi Routes_Name" value="C"/>
     <pref name="map_Taxi Routes_Oneway" value="0"/>
     <pref name="map_Taxi Routes_Slop" value="15"/>
-    <pref name="map_Taxilines_.Markings" value="95"/>
+    <pref name="map_Taxilines_.Markings" value="77,95"/>
     <pref name="map_Taxilines_Lights" value="95"/>
-    <pref name="map_Taxilines_Markings" value=""/>
+    <pref name="map_Taxilines_Markings" value="77"/>
     <pref name="map_Taxiway_.Markings" value="96"/>
     <pref name="map_Taxiway_Heading" value="0.000000"/>
     <pref name="map_Taxiway_Lights" value="96"/>
